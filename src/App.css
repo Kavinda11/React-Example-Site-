@@ -1,0 +1,135 @@
+/********Navbar********/
+
+.logo {
+  width: 16.25rem;
+}
+
+nav {
+  z-index: 2;
+}
+
+/*****Variables*****/
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*******Nav Links***********/
+
+nav a.nav-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  color: aqua;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  color: var(--primary-white) !important;
+  border-top: 00.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 7.25rem;
+  padding: 0 !important;
+  height: 4rem !important;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/*********Header***********/
+
+.header-wrapper {
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: aqua;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/*************typed***********/
+
+.typed-text {
+  font-size: 1.5rem;
+  color: #f9ab00;
+  text-transform: uppercase;
+}
+
+/******Header Main Offer Button********/
+
+.btn-main-offer {
+  border: 2px solid rgb(150, 255, 80);
+  text-transform: uppercase;
+  border: 1rem;
+  padding: 10px;
+  color: white;
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: #f9ab00;
+  color: black;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+/***********Particles**************/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particle-canvas {
+    display: none;
+  }
+}
